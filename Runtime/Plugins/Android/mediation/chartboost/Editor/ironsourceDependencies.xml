@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.ironsource.adapters:chartboostadapter:4.3.7"/>
+    </androidPackages>
+</dependencies>

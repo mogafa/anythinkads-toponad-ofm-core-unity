@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.applovin.mediation:mintegral-adapter:15.7.21.0"/>
+    </androidPackages>
+</dependencies>

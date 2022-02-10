@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.ironsource.adapters:adcolonyadapter:4.3.10"/>
+    </androidPackages>
+</dependencies>
