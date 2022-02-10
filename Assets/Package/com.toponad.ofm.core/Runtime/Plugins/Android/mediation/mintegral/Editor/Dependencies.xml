@@ -1,0 +1,15 @@
+<dependencies>
+    <androidPackages>
+        <repositories>
+            <repository>https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea</repository>
+        </repositories>
+        <androidPackage spec="com.mbridge.msdk.oversea:reward:15.7.71"/>
+        <androidPackage spec="com.mbridge.msdk.oversea:interstitialvideo:15.7.71"/>
+        <androidPackage spec="com.mbridge.msdk.oversea:mbnative:15.7.71"/>
+        <androidPackage spec="com.mbridge.msdk.oversea:interstitial:15.7.71"/>
+        <androidPackage spec="com.mbridge.msdk.oversea:mbsplash:15.7.71"/>
+        <androidPackage spec="com.mbridge.msdk.oversea:mbnativeadvanced:15.7.71"/>
+        <androidPackage spec="com.mbridge.msdk.oversea:mbbanner:15.7.71"/>
+        <androidPackage spec="com.mbridge.msdk.oversea:mbbid:15.7.71"/>
+    </androidPackages>
+</dependencies>

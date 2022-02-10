@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.applovin.mediation:facebook-adapter:6.8.0.0"/>
+    </androidPackages>
+</dependencies>
