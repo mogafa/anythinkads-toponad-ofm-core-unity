@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.ironsource.adapters:pangleadapter:4.3.8"/>
+    </androidPackages>
+</dependencies>

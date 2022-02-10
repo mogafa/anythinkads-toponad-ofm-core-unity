@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.applovin.mediation:adcolony-adapter:4.6.5.0"/>
+    </androidPackages>
+</dependencies>

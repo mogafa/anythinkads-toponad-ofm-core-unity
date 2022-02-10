@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.ironsource.adapters:vungleadapter:4.3.12"/>
+    </androidPackages>
+</dependencies>
