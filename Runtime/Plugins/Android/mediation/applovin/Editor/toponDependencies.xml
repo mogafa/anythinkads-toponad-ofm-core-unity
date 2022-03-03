@@ -1,0 +1,6 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.anythink.sdk:adapter-applovin:5.7.91"/>
+		<androidPackage spec="com.anythink.sdk:adapter-max:5.7.91"/>
+    </androidPackages>
+</dependencies>

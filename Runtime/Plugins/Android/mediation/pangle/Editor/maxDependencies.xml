@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.applovin.mediation:bytedance-adapter:4.1.1.2.0"/>
+    </androidPackages>
+</dependencies>

@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.ironsource.adapters:unityadsadapter:4.3.14"/>
+    </androidPackages>
+</dependencies>
