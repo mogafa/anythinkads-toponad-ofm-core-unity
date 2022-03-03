@@ -32,15 +32,10 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: |
           cd $PKG_ROOT
-          versionType=$(cat package.json.meta | grep -P 'versionType:( )*(major|minor|patch|preminor|prepatch|prerelease)' -o | grep -P '(major|minor|patch|preminor|prepatch|prerelease)' -o)
-          patchVersion=$(npm version $versionType | grep -P '\d+(.\d+)*' -o)
-          sed -i "s/versionType:[[:space:]]*\(major\|minor\|patch\|preminor\|prepatch\|prerelease\)/versionType: patch/g" package.json.meta
+          patchVersion=$(cat package.json | grep -P '\"version\":( )*\"\d+(.\d+)*\"' -o | grep -P '\d+(.\d+)*' -o)
           cd ../../../
           git config --global user.name 'github-bot'
           git config --global user.email 'github-bot@users.noreply.github.com'
-          git add .
-          git commit -m "change version to $patchVersion"
-          git push
           git tag v$patchVersion 
           git push origin --tags
         env:
@@ -77,4 +72,12 @@ jobs:
           git checkout dev
           git pull
           git merge ${GITHUB_REF##*/} --allow-unrelated-histories --strategy-option theirs
+          cd $PKG_ROOT
+          patchVersion=$(npm version patch | grep -P '\d+(.\d+)*' -o)
+          sed -i "s/Version\( \)\+=\( \)\+\"[0-9]\+\(\.[0-9]\)\+\"/Version = \"$patchVersion\"/g" ./Runtime/Contexts/Didabu.cs
+          cd ../../../
+          git add .
+          git commit -m "Change version to $patchVersion"
           git push -f &> /dev/null || echo $?
+        env:
+          PKG_ROOT: Assets/Package/com.toponad.ofm.core
