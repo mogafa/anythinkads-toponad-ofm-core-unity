@@ -74,7 +74,6 @@ jobs:
           git merge ${GITHUB_REF##*/} --allow-unrelated-histories --strategy-option theirs
           cd $PKG_ROOT
           patchVersion=$(npm version patch | grep -P '\d+(.\d+)*' -o)
-          sed -i "s/Version\( \)\+=\( \)\+\"[0-9]\+\(\.[0-9]\)\+\"/Version = \"$patchVersion\"/g" ./Runtime/Contexts/Didabu.cs
           cd ../../../
           git add .
           git commit -m "Change version to $patchVersion"
