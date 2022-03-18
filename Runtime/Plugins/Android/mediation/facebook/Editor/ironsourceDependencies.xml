@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.ironsource.adapters:facebookadapter:4.3.33"/>
+    </androidPackages>
+</dependencies>

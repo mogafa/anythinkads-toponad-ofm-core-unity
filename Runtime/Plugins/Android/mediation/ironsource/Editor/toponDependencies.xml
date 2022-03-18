@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.anythink.sdk:adapter-ironsource:5.7.91"/>
+    </androidPackages>
+</dependencies>

@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.applovin:applovin-sdk:10.3.4"/>
+    </androidPackages>
+</dependencies>
