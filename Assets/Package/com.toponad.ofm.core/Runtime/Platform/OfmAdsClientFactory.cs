@@ -39,7 +39,20 @@ namespace OfmSDK
             return new UnityInterstitialClient();
         }
 
-  
+        public static IOfmNativeAdClient BuildNativeAdClient()
+        {
+            #if UNITY_EDITOR
+            // Testing UNITY_EDITOR first because the editor also responds to the currently
+            // selected platform.
+            #elif UNITY_ANDROID
+                return new OfmSDK.Android.OfmNativeAdClient();
+            #elif (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+                return new OfmSDK.iOS.OfmNativeAdClient();
+            #else
+
+            #endif
+            return new UnityNativeAdClient();
+        }
 
         public static IOfmRewardedVideoAdClient BuildRewardedVideoAdClient()
         {
@@ -157,7 +170,34 @@ namespace OfmSDK
        public void cleanCache(string unitId){}
     }
 
- 
+    class UnityNativeAdClient : IOfmNativeAdClient
+     {
+        OfmNativeAdListener listener;
+        public void loadNativeAd(string unitId, string mapJson, string customRulesJson){
+             if(listener != null)
+             {
+                 listener.onAdLoadFail(unitId, "-1", "Must run on Android or IOS platform!");
+             }
+        }
+
+        public bool hasAdReady(string unitId) { return false; }
+
+        public void setListener(OfmNativeAdListener listener){
+             this.listener = listener;
+        }
+
+        public void renderAdToScene(string unitId, OfmNativeAdView anyThinkNativeAdView){}
+
+        public void cleanAdView(string unitId, OfmNativeAdView anyThinkNativeAdView){}
+
+        public void onApplicationForces(string unitId, OfmNativeAdView anyThinkNativeAdView){}
+
+        public void onApplicationPasue(string unitId, OfmNativeAdView anyThinkNativeAdView){}
+
+        public void cleanCache(string unitId){}
+
+        public void setLocalExtra(string unitid, string mapJson){}
+    }
 
     class UnityRewardedVideoAdClient : IOfmRewardedVideoAdClient
     {
