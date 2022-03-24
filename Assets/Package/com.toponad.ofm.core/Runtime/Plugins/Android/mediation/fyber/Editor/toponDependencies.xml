@@ -1,5 +1,5 @@
 <dependencies>
     <androidPackages>
-        <androidPackage spec="com.anythink.sdk:adapter-facebook:5.8.13"/>
+        <androidPackage spec="com.anythink.sdk:adapter-fyber:5.8.13"/>
     </androidPackages>
 </dependencies>

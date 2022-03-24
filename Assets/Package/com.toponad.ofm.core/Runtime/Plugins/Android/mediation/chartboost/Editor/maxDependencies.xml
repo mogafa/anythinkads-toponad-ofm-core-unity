@@ -1,5 +1,5 @@
 <dependencies>
     <androidPackages>
-        <androidPackage spec="com.applovin.mediation:chartboost-adapter:8.2.1.0"/>
+        <androidPackage spec="com.applovin.mediation:chartboost-adapter:8.2.1.1"/>
     </androidPackages>
 </dependencies>

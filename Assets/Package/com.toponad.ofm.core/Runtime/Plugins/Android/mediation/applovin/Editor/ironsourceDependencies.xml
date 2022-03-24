@@ -1,5 +1,0 @@
-<dependencies>
-    <androidPackages>
-        <androidPackage spec="com.ironsource.adapters:applovinadapter:4.3.28"/>
-    </androidPackages>
-</dependencies>
