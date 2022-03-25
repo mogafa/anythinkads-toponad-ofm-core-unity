@@ -1,0 +1,6 @@
+framework module OFMMaxAdapter {
+  umbrella header "OFMMaxAdapter.h"
+
+  export *
+  module * { export * }
+}

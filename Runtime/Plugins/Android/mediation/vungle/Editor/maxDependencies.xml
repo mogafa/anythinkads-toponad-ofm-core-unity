@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.applovin.mediation:vungle-adapter:6.10.4.0"/>
+    </androidPackages>
+</dependencies>
