@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.applovin.mediation:ironsource-adapter:7.2.0.0.0"/>
+    </androidPackages>
+</dependencies>

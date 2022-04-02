@@ -1,0 +1,5 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.anythink.sdk:adapter-adcolony:5.8.13"/>
+    </androidPackages>
+</dependencies>

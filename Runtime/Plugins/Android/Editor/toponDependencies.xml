@@ -1,0 +1,13 @@
+<dependencies>
+    <androidPackages>
+        <repositories>
+            <repository>https://anythink.jfrog.io/artifactory/android_sdk</repository>
+        </repositories>
+        <androidPackage spec="com.anythink.sdk:core:5.8.13"/>
+        <androidPackage spec="com.anythink.sdk:nativead:5.8.13"/>
+        <androidPackage spec="com.anythink.sdk:banner:5.8.13"/>
+        <androidPackage spec="com.anythink.sdk:interstitial:5.8.13"/>
+        <androidPackage spec="com.anythink.sdk:rewardedvideo:5.8.13"/>
+        <androidPackage spec="com.anythink.sdk:splash:5.8.13"/>
+    </androidPackages>
+</dependencies>

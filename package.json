@@ -1,0 +1,19 @@
+{
+  "displayName": "Topon Ads Ofm Unity",
+  "category": "Unity",
+  "description": "Topon Ads Ofm Unity",
+  "keywords": [
+    "ad",
+    "topon",
+    "ofm",
+    "unity"
+  ],
+  "dependencies": {
+    "com.google.external-dependency-manager": "1.2.167"
+  },
+  "author": "anythinkads",
+  "name": "com.toponad.ofm.core.unity",
+  "version": "2.0.202",
+  "type": "library",
+  "unity": "2019.3"
+}

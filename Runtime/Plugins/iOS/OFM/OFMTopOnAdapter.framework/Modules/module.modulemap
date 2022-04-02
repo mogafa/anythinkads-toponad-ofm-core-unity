@@ -1,0 +1,6 @@
+framework module OFMTopOnAdapter {
+  umbrella header "OFMTopOnAdapter.h"
+
+  export *
+  module * { export * }
+}
